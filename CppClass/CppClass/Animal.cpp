@@ -18,3 +18,15 @@ Animal::Animal(const char* name, int footNum)
 	name_ = "動物";
 	footNum_ = 4;
 }
+
+// デストラクタの定義
+Animal::~Animal()
+{
+	std::cout << "デストラクタが呼ばれました" << std::endl;
+
+	name_ = "破棄済み";
+	footNum_ = 0;
+}
+
+
+

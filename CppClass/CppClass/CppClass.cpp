@@ -4,10 +4,14 @@
 
 int main()
 {
-	//アニマルクラスのインスタンスを作成する
-	Animal animal;
+	{
+		//アニマルクラスのインスタンスを作成する
+		object::Animal animal;
 
-	Animal animal2("猛獣", 2);
+		object::Animal animal2("猛獣", 2);
+
+		std::cout << "スコープを抜ける" << std::endl;
+	}
 }
 
 

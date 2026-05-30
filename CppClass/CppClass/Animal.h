@@ -3,18 +3,26 @@
 #include <iostream>
 #include <stdio.h>
 
-//動物クラス
-class Animal final
-{
-public:
-	//コンストラクタの宣言
-	Animal();
+namespace object {
 
-	Animal(const char* name, int footNum);
+	//動物クラス
+	class Animal final
+	{
+	public:
+		// デストラクタの宣言
+		~Animal();
 
-public:
-	std::string name_ = {};
-	int	 footNum_ = 0;
-};
+	public:
+		//コンストラクタの宣言
+		Animal();
+
+		Animal(const char* name, int footNum);
+
+	public:
+		std::string name_ = {};
+		int	 footNum_ = 0;
+	};
+
+}
 
 
