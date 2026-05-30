@@ -23,9 +23,5 @@ public:
 		std::cout << "Hp‚Í" << hp_ << "‚Å‚·" << std::endl;
 		std::cout << "Attack‚Í" << attack_ << "‚Å‚·" << std::endl;
 	}
-
-
-
-
 	
 };
