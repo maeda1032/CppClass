@@ -1,7 +1,5 @@
 ﻿#include "Character.h"
-#include <stdio.h>
-#include <string>
-#include <iostream>
+
 
 
 int main()
@@ -9,11 +7,12 @@ int main()
 	Character myCharacter;
 	Character myCharacter1;
 
-	Character* myClassStatus = &myCharacter;
-	myClassStatus->printStatus();
-	Character* myClassUpdate = &myCharacter1;
-	myClassUpdate->StatusUpdate();
+	myCharacter.ChangeStatus("田中", 5, 6);
+	myCharacter1.ChangeStatus("斎藤",15,56);
 
+	myCharacter.printStatus();
+	myCharacter1.printStatus();
+	
 }
 
 
